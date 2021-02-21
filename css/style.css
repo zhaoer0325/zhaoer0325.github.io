@@ -294,7 +294,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   transition: background-color 0.5s;
 }
 .header .header-content .navbar .menu .menu-item a {
-  color: #3500d3;
+  color: #c5cbe3;
   display: block;
   width: 100%;
   height: 100%;
@@ -319,7 +319,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   height: 100%;
 }
 .header .blog-title a {
-  color: #3500d3;
+  color: #c5cbe3;
   margin-left: 5px;
   display: inline-block;
   font-size: 1.6em;
@@ -332,7 +332,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 }
 .header #he-plugin-simple .s-sticker-tmp,
 .header #he-plugin-simple .s-sticker-city {
-  color: #3500d3 !important;
+  color: #c5cbe3 !important;
 }
 @media (min-width: 992px) {
   .bars {
@@ -695,7 +695,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   font-size: 13px;
   font-weight: 700;
   line-height: 20px;
-  color: #3500d3;
+  color: #c5cbe3;
   -webkit-transition: opacity 0.3s ease-in-out;
   -o-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
@@ -956,13 +956,13 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #3500d3;
+  color: #c5cbe3;
 }
 .footer .footer-main {
   text-align: center;
 }
 .footer .footer-main a {
-  color: #3500d3;
+  color: #c5cbe3;
 }
 .footer .footer-main i {
   margin-right: 10px;
@@ -1095,7 +1095,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   border-top-right-radius: 32px;
   border-bottom-right-radius: 32px;
   padding: 10px;
-  color: #3500d3;
+  color: #c5cbe3;
 }
 .page-nav .page-nav-pre .ml-5 {
   margin-left: 5px;
@@ -1105,7 +1105,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   border-top-left-radius: 32px;
   border-bottom-left-radius: 32px;
   padding: 10px;
-  color: #3500d3;
+  color: #c5cbe3;
 }
 .page-nav .page-nav-next .mr-5 {
   margin-right: 5px;
@@ -1307,7 +1307,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   text-align: left;
 }
 .post-nav .post-nav-prev a {
-  color: #3500d3;
+  color: #c5cbe3;
 }
 .post-nav .post-nav-next .title {
   text-align: right;
@@ -1319,7 +1319,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   text-align: right;
 }
 .post-nav .post-nav-next a {
-  color: #3500d3;
+  color: #c5cbe3;
 }
 @media (max-width: 551px) {
   .post-nav .post-nav-prev,
@@ -1350,7 +1350,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   justify-content: center;
 }
 .archive-header .title {
-  color: #3500d3;
+  color: #c5cbe3;
   font-size: 2em;
   letter-spacing: 10px;
 }
@@ -1924,7 +1924,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   background: url("/source/medias/comment_bg.png") 100% 100% no-repeat;
 }
 .search {
-  color: #3500d3;
+  color: #c5cbe3;
   padding: 0 15px;
   height: 100%;
   line-height: 60px;
@@ -2083,7 +2083,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   bottom: 20px;
   right: 17px;
   border-radius: 50%;
-  color: #3500d3;
+  color: #c5cbe3;
   transform: translateY(120px);
   transition: transform 0.2s;
   box-shadow: -2px 2px 2px 2px rgba(255,255,255,0.5);
@@ -2110,7 +2110,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
 }
 .swiper-btn-color {
   background-color: #1f2833;
-  color: #3500d3 !important;
+  color: #c5cbe3 !important;
 }
 .swiper-pagination-bullet-active {
   background-color: #1f2833 !important;
@@ -2158,7 +2158,7 @@ pre:hover::-webkit-scrollbar-thumb:hover,
   border-color: #1f2833 !important;
 }
 .dark {
-  color: #3500d3;
+  color: #c5cbe3;
   background-color: #222;
   position: fixed;
   right: 0;
@@ -2770,7 +2770,7 @@ span.p.small {
 .posts span.btn.solid a {
   border: none;
   background: #1f2833;
-  color: #3500d3 !important;
+  color: #c5cbe3 !important;
 }
 .post-detail span.btn.solid a:hover,
 .posts span.btn.solid a:hover {
@@ -2797,7 +2797,7 @@ span.p.small {
 .post-detail span.btn.warning a,
 .posts span.btn.warning a {
   background-color: #e6a23c;
-  color: #3500d3 !important;
+  color: #c5cbe3 !important;
   border: none;
 }
 .post-detail span.btn.warning a:hover,
@@ -2818,7 +2818,7 @@ span.p.small {
 .post-detail span.btn.info a,
 .posts span.btn.info a {
   background-color: #409eff;
-  color: #3500d3 !important;
+  color: #c5cbe3 !important;
   border: none;
 }
 .post-detail span.btn.info a:hover,
@@ -2839,7 +2839,7 @@ span.p.small {
 .post-detail span.btn.success a,
 .posts span.btn.success a {
   background-color: #67c23a;
-  color: #3500d3 !important;
+  color: #c5cbe3 !important;
   border: none;
 }
 .post-detail span.btn.success a:hover,
@@ -2860,7 +2860,7 @@ span.p.small {
 .post-detail span.btn.danger a,
 .posts span.btn.danger a {
   background-color: #f66;
-  color: #3500d3 !important;
+  color: #c5cbe3 !important;
   border: none;
 }
 .post-detail span.btn.danger a:hover,
@@ -2981,7 +2981,7 @@ span.p.small {
   margin: 16px 8px 4px 8px;
   margin-top: calc(-1.25 * 16px - 32px);
   border: 2px solid #fff;
-  background: #3500d3;
+  background: #c5cbe3;
   line-height: 60px;
   font-size: 28px;
 }
@@ -2993,7 +2993,7 @@ span.p.small {
 }
 .post-detail div.btns a>i:first-child,
 .posts div.btns a>i:first-child {
-  color: #3500d3;
+  color: #c5cbe3;
   background: #1f2833;
 }
 .post-detail div.btns a p,
@@ -4392,7 +4392,7 @@ div.tabs .tab-content .tab-pane > .note:last-child {
   }
 }
 .danmu {
-  color: #3500d3;
+  color: #c5cbe3;
   background-color: #1f2833;
   position: fixed;
   right: 0;
