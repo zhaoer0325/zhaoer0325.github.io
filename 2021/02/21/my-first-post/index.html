@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>友情链接 | Z H A O E R</title>
+  <title>《我喜欢的你是寂静的》 | Z H A O E R</title>
 
   
     
@@ -395,172 +395,251 @@
     
 </header>
     <main class="main" style="margin-top: 60px;">
-      <div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;"></div>
-<div class="lazyload friends-header" data-original="/medias/arch55.jpg" style="width: 100%;height: 50vh;overflow: hidden;background-size: cover; 
-background-position: center center;">
-<!-- <img src="https://pic4.zhimg.com/80/v2-1a6ab86d51b8abb6be95c970e054adf6_1440w.jpg" alt="" style="width: 100%;"> -->
+      
+ <!-- prismjs 代码高亮 -->
+ 
+
+<div class="bg-dark-floor" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -1;"></div>
+<div id="appBgSwiper" style="position: fixed;left: 0;top: 0;width: 100%;height: 100%;z-index: -2;" :style="{'background-color': bgColor ? bgColor : 'transparent'}">
+    <transition-group tag="ul" :name="names">
+        <li v-for='(image,index) in img' :key='index' v-show="index === mark" class="bg-swiper-box">
+            <img :src="image" class="bg-swiper-img">
+        </li>
+    </transition-group>
 </div>
-<div class="container" id="friends">
-  <div class="friends-title">
-    <i class="fa fa-link" aria-hidden="true"></i>&nbsp;&nbsp;友情链接
-  </div>
-  <div class="friends">
-    
-    
-      
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://img13.360buyimg.com/ddimg/jfs/t1/151194/21/20376/10218/6031e831E19c968fc/c7f6ed121c9c81e1.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="http://www.lvyestudy.com/" target="_blank">
-              绿叶学习网
-            </a>
-          </div>
-          <div class="friend-introduction">前端学习网站</div>
-        </div>
-      </div>
-    
-      
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://img14.360buyimg.com/ddimg/jfs/t1/163316/4/7045/2919/6031e851E40bd6fc2/4cafe5d91553ebdc.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="https://www.liaoxuefeng.com/" target="_blank">
-              廖雪峰的官方网站
-            </a>
-          </div>
-          <div class="friend-introduction">前端学习网站</div>
-        </div>
-      </div>
-    
-      
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://img12.360buyimg.com/ddimg/jfs/t1/156277/34/10635/224112/603262dcEb5a9e6fd/677e7f9a3298414d.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="https://devopen.club/" target="_blank">
-              DevOpen.Club
-            </a>
-          </div>
-          <div class="friend-introduction">软件开发视频教程</div>
-        </div>
-      </div>
-    
-      
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://img10.360buyimg.com/ddimg/jfs/t1/170150/28/7299/3826/6031ea76E76075578/876dc7f062b91add.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="https://notebook.js.org/#/README" target="_blank">
-              ETS&#39;NoteBook
-            </a>
-          </div>
-          <div class="friend-introduction">个人笔记</div>
-        </div>
-      </div>
-    
-      
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://img10.360buyimg.com/ddimg/jfs/t1/160057/7/8014/55625/6031eb8aE7e87e565/2e99eee2e724487d.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="https://blog.kieng.cn/" target="_blank">
-              KIENG&#39;Blog
-            </a>
-          </div>
-          <div class="friend-introduction">个人博客</div>
-        </div>
-      </div>
-    
-      
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://img12.360buyimg.com/ddimg/jfs/t1/152762/36/18958/9383/60324451E6b89da70/7742afa599811937.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="https://image.kieng.cn/" target="_blank">
-              KIENG图床
-            </a>
-          </div>
-          <div class="friend-introduction">工具-图床</div>
-        </div>
-      </div>
-    
-      
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://img11.360buyimg.com/ddimg/jfs/t1/150357/16/20440/4620/60327059E63002bf0/eabb1dd80e7731b7.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="https://colorhunt.co/" target="_blank">
-              Color Hunt
-            </a>
-          </div>
-          <div class="friend-introduction">配色方案网站</div>
-        </div>
-      </div>
-    
-      
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://img12.360buyimg.com/ddimg/jfs/t1/165821/8/7260/6818/603271d0E6c3ffa30/20f55b0150579c14.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="https://www.jq22.com/" target="_blank">
-              jQ插件库
-            </a>
-          </div>
-          <div class="friend-introduction">jQ插件网站</div>
-        </div>
-      </div>
-    
-      
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://img11.360buyimg.com/ddimg/jfs/t1/164676/5/7026/81613/603244f8Ee827bd00/da55c53d400f4843.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="http://www.fontawesome.com.cn/" target="_blank">
-              Font Awesome 中文网
-            </a>
-          </div>
-          <div class="friend-introduction">icon素材网站</div>
-        </div>
-      </div>
-    
-      
-      <div class="friend">
-        <div class="friend-avatar">
-          <img src="https://img14.360buyimg.com/ddimg/jfs/t1/157473/4/6911/11234/603245ebE557cd87d/d46ea6ab943355ba.png" alt="img">
-        </div>
-        <div class="friend-info">
-          <div class="friend-name">
-            <a href="https://699pic.com/" target="_blank">
-              摄图网
-            </a>
-          </div>
-          <div class="friend-introduction">正版图片素材网站</div>
-        </div>
-      </div>
-    
-  </div>
-  <!-- 评论 -->
+<script>
+    var vm = new Vue({
+        el: '#appBgSwiper',
+        data: {
+            names: '' || 'fade' || 'fade', // translate-fade fade
+            mark: 0,
+            img: [],
+            bgColor: '',
+            time: null
+        },
+        methods: {   //添加方法
+            change(i, m) {
+                if (i > m) {
+                    // this.names = 'fade';
+                } else if (i < m) {
+                    // this.names = 'fade';
+                } else {
+                    return;
+                }
+                this.mark = i;
+            },
+            prev() {
+                // this.names = 'fade';
+                this.mark--;
+                if (this.mark === -1) {
+                    this.mark = 3;
+                    return
+                }
+            },
+            next() {
+                // this.names = 'fade';
+                this.mark++;
+                if (this.mark === this.img.length) {
+                    this.mark = 0;
+                    return
+                }
+            },
+            autoPlay() {
+                // this.names = 'fade';
+                this.mark++;
+                if (this.mark === this.img.length) {
+                    this.mark = 0;
+                    return
+                }
+            },
+            play() {
+                let bgImgDelay = '' || '180000'
+                let delay = parseInt(bgImgDelay) || 180000;
+                this.time = setInterval(this.autoPlay, delay);
+            },
+            enter() {
+                clearInterval(this.time);
+            },
+            leave() {
+                this.play();
+            }
+        },
+        created() {
+            this.play()
+        },
+        beforeDestroy() {
+            clearInterval(this.time);
+        },
+        mounted() {
+            let prop = ''|| '';
+            let isImg = prop.includes('.bmp') || prop.includes('.jpg') || prop.includes('.png') || prop.includes('.tif') || prop.includes('.gif') || prop.includes('.pcx') || prop.includes('.tga') || prop.includes('.exif') || prop.includes('.fpx') || prop.includes('.psd') || prop.includes('.cdr') || prop.includes('.pcd') || prop.includes('.dxf') || prop.includes('.ufo') || prop.includes('.eps') || prop.includes('.ai') || prop.includes('.raw') || prop.includes('.WMF') || prop.includes('.webp') || prop.includes('.jpeg')
+            if (isImg) {
+                let img = prop.split(',');
+                let configRoot = '/'
+                let arrImg = [];
+                img.forEach(el => {
+                    var Expression=/http(s)?:\/\/([\w-]+\.)+[\w-]+(\/[\w- .\/?%&=]*)?/;
+			        var objExp = new RegExp(Expression);
+
+                    if(objExp.test(el)) {
+                        // http or https
+                        arrImg.push(el);
+                    } else {
+                        // 非http or https开头
+                        // 本地文件
+                        let firstStr = el.charAt(0);
+                        if (firstStr == '/') {
+                            el = el.substr(1); // 删除第一个字符 '/',因为 configRoot最后一个字符为 /
+                        }
+                        el = configRoot + el;
+                        arrImg.push(el);
+                    }
+                })
+                this.img = arrImg;
+            } else {
+                this.bgColor = prop;
+            }
+        }
+    })
+</script>
+
+<style>
+    .bg-swiper-box {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .bg-swiper-img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+
+
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/bb.jpg" style="background-repeat: no-repeat; background-size: cover; 
+  background-position: center center;position: relative;">
+  <div class="post-detail-header-mask"></div>
+  <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
   
-    <section id="comments" style="padding: 1em; margin: 15px auto;"
+    <div class="title-box">
+      
+        <span class="title" id="post-detail-header-title"></span>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+          <script>
+            var typed = new Typed("#post-detail-header-title", {
+              strings: ['《我喜欢的你是寂静的》'],
+              startDelay: 100,
+              typeSpeed: 100,
+              loop: false,
+              backSpeed: 50,
+              showCursor: false
+            });
+          </script>
+        
+    </div>
+  
+  
+  
+    <script src="/js/bubble/bubble.js"></script>
+  
+</div>
+
+
+<div class="row justify-position">
+  <div class="main-content">
+    <article class="post post-detail">
+      
+      
+      <div class="post-meta">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span class="post-time">2021-02-21</span>
+      </div>
+      
+      <div class="post-tags-categories">
+        
+        <div class="tags">
+          <i class="iconfont icontag"></i>
+          
+            <a href="/tags/%E6%9D%82/" class="">
+              杂
+            </a>
+          
+            <a href="/tags/%E9%9A%8F%E7%AC%94/" class="">
+              随笔
+            </a>
+          
+        </div>
+        
+        
+      </div>
+      <div class="post-content">
+        <p>我喜欢你是寂静的—-聂鲁达<br>我喜欢你是寂静的，仿佛你消失了一样。<br>你从远处聆听我，我的声音却无法触及你。<br>好像你的双眼已经飞离远去，<br>如同一个吻，封缄了你的嘴。<br>如同所有的事物充满了我的灵魂，<br>你从所有的事物中浮现，充满了我的灵魂。<br>你像我灵魂，一只梦的蝴蝶，<br>你如同忧郁这个字。<br>我喜欢你是寂静的，好像你已远去。<br>你听起来像在悲叹，一只如鸽悲鸣的蝴蝶。<br>你从远处听见我，我的声音无法企及你。<br>让我在你的沉默中安静无声。<br>并且让我借你的沉默与你说话，<br>你的沉默明亮如灯，简单如指环。<br>你就像黑夜，拥有寂静与群星。<br>你的沉默就是星星的沉默，遥远而明亮。<br>我喜欢你是寂静的，仿佛你消失了一样，<br>遥远且哀伤，仿佛你已经死了。<br>彼时，一个字，一个微笑，已经足够。<br>而我会觉得幸福，因那不是真的而觉得幸福。</p>
+<pre><code class="bash">hello world！
+</code></pre>
+<hr>
+
+      </div>
+      
+    </article>
+    <!-- 上一篇文章和下一篇文章 -->
+    
+      
+<div class="post-nav">
+
+
+
+
+
+  
+  <div class="post-nav-next post-nav-item">
+    <div class="post-nav-img lazyload" data-original="/medias/7.jpg" style="background-size: cover; 
+      background-position: center center;">
+    </div>
+    <a href="/2021/02/17/hello-world/" class="post-nav-link">
+      <div class="title">
+        下一篇: <i class="fa fa-angle-right"></i>
+        <div>Hello World</div>
+      </div>
+      <!-- <div class="content">
+        Welcome to Hexo! This is your very first post. Check documen
+      </div> -->
+    </a>
+  </div>
+
+</div>
+
+    
+    
+
+    <!-- 打赏 -->
+    
+
+    <!-- 分享 -->
+    
+      <!-- https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-sites="qq,wechat,weibo,douban" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+
+<script src="/js/shareJs/social-share.min.js"></script>
+</script>
+
+<style>
+  .social-share {
+    margin: 20px 0;
+  }
+</style>
+
+
+    
+    
+    <!-- 评论 -->
+      
+        <div id="myComment">
+          
+            <section id="comments" style="padding: 1em; margin: 15px auto;"
 	class="animated bounceInUp">
 	<div id="vcomment" class="comment"></div>
 	<script src="/js/valine/av-min@3.0.4.js"></script>
@@ -1439,8 +1518,119 @@ background-position: center center;">
 		box-shadow: none;
 	}
 </style>
+          
+        </div>
+      
+  </div>
+
+  
+    <div class="toc-aside">
+      <div class="toc-main">
+        <div class="toc-aside-title">
+          <i class="fa fa-list-ul" aria-hidden="true"></i><span>本文目录</span>
+          <div class="toc-open-close">本文目录</div>
+        </div>
+        <div class="toc-content">
+          <link href="/js/tocbot/tocbot.css" rel="stylesheet">
+<script src="/js/tocbot/tocbot.min.js"></script>
+<div class="toc"></div>
+
+<script>
+  if ($('.toc').length > 0) {
+    var headerEl = 'h2, h3, h4',  //headers 
+      content = '.post-detail',//文章容器
+      idArr = {};  //标题数组以确定是否增加索引id
+      //add #id
+
+    $(content).children(headerEl).each(function () {
+      //去除空格以及多余标点
+      var headerId = $(this).text().replace(/[\s|\~|`|\!|\@|\#|\$|\%|\^|\&|\*|\(|\)|\_|\+|\=|\||\|\[|\]|\{|\}|\;|\:|\"|\'|\,|\<|\.|\>|\/|\?|\：|\，|\。]/g, '');
+
+      headerId = headerId.toLowerCase();
+      if (idArr[headerId]) {
+        //id已经存在
+        $(this).attr('id', headerId + '-' + idArr[headerId]);
+        idArr[headerId]++;
+      }
+      else {
+        //id未存在
+        idArr[headerId] = 1;
+        $(this).attr('id', headerId);
+      }
+    });
+
+    tocbot.init({
+      // Where to render the table of contents.
+      tocSelector: '.toc',
+      // Where to grab the headings to build the table of contents.
+      contentSelector: content,
+      // Which headings to grab inside of the contentSelector element.
+      headingSelector: headerEl,
+      scrollSmooth: true,
+      scrollSmoothOffset: -80,
+      headingsOffset: 130,
+      positionFixedSelector: '.toc-main',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  }
+
+</script>
+
+<style>
+.is-position-fixed {
+  position:fixed !important;
+  top: 64px;
+}
+.toc-main ul {
+  counter-reset: show-list;
+}
+.toc-main ul li::before {
+  content: counter(item)".";
+  display: block;
+  position: absolute;
+  left: 12px;
+  top:0;
+}
+.toc > .toc-list {
+  padding-left: 35px;
+}
+.toc>.toc-list li {
+  list-style: decimal;
+}
+.toc-list {
+  padding-left: 25px;
+}
+</style>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script>
+      let openOrCloseBtn = $('.toc-aside .toc-aside-title .toc-open-close');
+      let open = eval('' || 'true');
+      openOrCloseBtn.click(function() {
+        if (open === true) {
+          $(".toc-aside").css({'width': 0, 'padding': 0});
+          $(".toc-content").css({'width': 0});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'none'});
+          $(".main-content").css({'width': '75%', 'margin': '10px auto'});
+          open = false;
+        } else {
+          $(".toc-aside").css({'width': '300px', 'padding': '0 10px'});
+          $(".toc-content").css({'width': '300px'});
+          $(".toc-aside-title span, .toc-aside-title i").css({'display': 'inline-block'});
+          $(".main-content").css({'width': '65%', 'margin-right': '10px', 'margin-left': 'calc(35% - 350px)'});
+          open = true;
+        }
+      });
+    </script>
   
 </div>
+
+
     </main>
     <div class="footer bg-color">
   <div class="footer-main">
