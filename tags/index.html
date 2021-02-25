@@ -56,6 +56,12 @@
   <link href="/js/danmu/barrager.css" rel="stylesheet">
 <script src="/js/danmu/jquery.barrager.js"></script>
   <body>
+
+    <!--动态线条背景-->
+   <script type="text/javascript"
+    color="0,0,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+   </script>
+
     <!-- 判断是否为黑夜模式 -->
     <script>
       let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
@@ -125,7 +131,7 @@
           <li class="drawer-box-content_item">
             <a href="/album" class="menu-item-link">
               
-              <span>Menu.Album</span>
+              <span>Menu.相册</span>
             </a>
           </li>
         
@@ -190,7 +196,8 @@
           <li class="menu-item">
             <a href="/" class="menu-item-link">
               
-                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-cube" aria-hidden="true"></i>
+              
               
               <span>首页</span>
             </a>
@@ -199,7 +206,8 @@
           <li class="menu-item">
             <a href="/archives" class="menu-item-link">
               
-                <i class="fa fa-archive" aria-hidden="true"></i>
+                <i class="fa fa-leaf" aria-hidden="true"></i>
+              
               
               <span>归档</span>
             </a>
@@ -210,6 +218,7 @@
               
                 <i class="fa fa-tags" aria-hidden="true"></i>
               
+              
               <span>标签</span>
             </a>
           </li>
@@ -217,7 +226,8 @@
           <li class="menu-item">
             <a href="/categories" class="menu-item-link">
               
-                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                <i class="fa fa-coffee" aria-hidden="true"></i>
+              
               
               <span>分类</span>
             </a>
@@ -226,7 +236,11 @@
           <li class="menu-item">
             <a href="/album" class="menu-item-link">
               
-              <span>Menu.Album</span>
+                <i class="fa fa-camera-retro" aria-hidden="true"></i>  <!--新增相册-->
+
+              
+              
+              <span>Menu.相册</span>
             </a>
           </li>
         
@@ -234,6 +248,7 @@
             <a href="/friends" class="menu-item-link">
               
                 <i class="fa fa-link" aria-hidden="true"></i>
+              
               
               <span>友情链接</span>
             </a>
@@ -407,6 +422,14 @@ background-position: center center;">
                 <i class="fa fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
             <div class="tag-chips">
+                
+                
+                <a href="/tags/Git/" title="Git: 1">
+                    <span class="tag-content"
+                        title="Git" style="background-color: #F9E79F;">Git
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
                 
                 <a href="/tags/%E6%9D%82/" title="杂: 1">

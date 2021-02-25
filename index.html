@@ -56,6 +56,12 @@
   <link href="/js/danmu/barrager.css" rel="stylesheet">
 <script src="/js/danmu/jquery.barrager.js"></script>
   <body>
+
+    <!--动态线条背景-->
+   <script type="text/javascript"
+    color="0,0,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
+   </script>
+
     <!-- 判断是否为黑夜模式 -->
     <script>
       let isDark = JSON.parse(localStorage.getItem('dark')) || JSON.parse('false');
@@ -125,7 +131,7 @@
           <li class="drawer-box-content_item">
             <a href="/album" class="menu-item-link">
               
-              <span>Menu.Album</span>
+              <span>Menu.相册</span>
             </a>
           </li>
         
@@ -190,7 +196,8 @@
           <li class="menu-item">
             <a href="/" class="menu-item-link">
               
-                <i class="fa fa-home" aria-hidden="true"></i>
+                <i class="fa fa-cube" aria-hidden="true"></i>
+              
               
               <span>首页</span>
             </a>
@@ -199,7 +206,8 @@
           <li class="menu-item">
             <a href="/archives" class="menu-item-link">
               
-                <i class="fa fa-archive" aria-hidden="true"></i>
+                <i class="fa fa-leaf" aria-hidden="true"></i>
+              
               
               <span>归档</span>
             </a>
@@ -210,6 +218,7 @@
               
                 <i class="fa fa-tags" aria-hidden="true"></i>
               
+              
               <span>标签</span>
             </a>
           </li>
@@ -217,7 +226,8 @@
           <li class="menu-item">
             <a href="/categories" class="menu-item-link">
               
-                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                <i class="fa fa-coffee" aria-hidden="true"></i>
+              
               
               <span>分类</span>
             </a>
@@ -226,7 +236,11 @@
           <li class="menu-item">
             <a href="/album" class="menu-item-link">
               
-              <span>Menu.Album</span>
+                <i class="fa fa-camera-retro" aria-hidden="true"></i>  <!--新增相册-->
+
+              
+              
+              <span>Menu.相册</span>
             </a>
           </li>
         
@@ -234,6 +248,7 @@
             <a href="/friends" class="menu-item-link">
               
                 <i class="fa fa-link" aria-hidden="true"></i>
+              
               
               <span>友情链接</span>
             </a>
@@ -409,11 +424,11 @@
   <swiper v-cloak ref="mySwiper" :options="swiperOptions" @slideChangeTransitionEnd="slideChangeTransitionEnd">
     
       <swiper-slide>
-        <div class="item swiper-lazy" data-background="/medias/aa.jpg" style="background-size: 90000px; 
+        <div class="item swiper-lazy" data-background="https://img10.360buyimg.com/ddimg/jfs/t1/157240/5/8575/117467/60374c7bE0a301792/3202d754bcecab0d.jpg" style="background-size: 90000px; 
           background-position: center center;" style="position: relative;">
           <div class="swiper-bgmask" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;"></div>
             <div class="flag">
-              <div class="img-mask swiper-lazy" data-background="/medias/aa.jpg" style="height: 100%; background-size: cover; 
+              <div class="img-mask swiper-lazy" data-background="https://img10.360buyimg.com/ddimg/jfs/t1/157240/5/8575/117467/60374c7bE0a301792/3202d754bcecab0d.jpg" style="height: 100%; background-size: cover; 
                 background-position: center center;">
                 <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>   
               </div>
@@ -678,6 +693,62 @@
         <div class="post-info">
           <div class="post-time">
             <i class="fa fa-clock-o" aria-hidden="true"></i>
+            <span class="post-time">2021-02-25</span>
+          </div>
+          <div class="post-title">
+            <a class="post-title-link" href="/2021/02/25/git%E5%91%BD%E4%BB%A4/">Git基本命令</a>
+          </div>
+          <div class="post-meta">
+            <div class="post-tags">
+              
+    <i class="iconfont icontag"></i>
+    <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Git/" rel="tag">Git</a></li></ul>
+
+            </div>
+            <div class="post-categories">
+              
+            </div>
+          </div>
+          <div class="post-img-mobile">
+            
+              <a href="/2021/02/25/git%E5%91%BD%E4%BB%A4/" class="lazyload" data-original="https://img11.360buyimg.com/ddimg/jfs/t1/151742/33/19925/217368/60374bc2E1c483881/2d0f0dd2ec66fbf7.jpg" style="background-size: cover; 
+                background-position: center center;">
+              </a>
+            
+          </div>
+          <div class="post-content">
+            
+
+【1】创建–创建本地库1.在某一个磁盘找到合适的位置，打开终端
+$ mkdir &lt;本地库名&gt;
+$ cd &lt;本地库名&gt;
+$ git init
+
+2.在库里创建一个文件并提交到本地仓库
+//提交文件到暂存区
+$ gi
+          </div>
+        </div>
+        <div class="post-more">
+          <a href="/2021/02/25/git%E5%91%BD%E4%BB%A4/">
+            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
+          </a>
+        </div>
+      </div>
+      <div class="post-img">
+        
+          <a href="/2021/02/25/git%E5%91%BD%E4%BB%A4/" class="lazyload" data-original="https://img11.360buyimg.com/ddimg/jfs/t1/151742/33/19925/217368/60374bc2E1c483881/2d0f0dd2ec66fbf7.jpg" style="background-size: cover; 
+            background-position: center center;">
+          </a>
+        
+      </div>
+    </article>
+  
+    <article class="post" data-aos="fade-up" style="   ">
+      <div class="post-main">
+        <div class="post-info">
+          <div class="post-time">
+            <i class="fa fa-clock-o" aria-hidden="true"></i>
             <span class="post-time">2021-02-21</span>
           </div>
           <div class="post-title">
@@ -707,7 +778,7 @@
         </div>
         <div class="post-more">
           <a href="/2021/02/21/my-first-post/">
-            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
+            <i class="iconfont iconmore" style="  " title="阅读更多"></i>
           </a>
         </div>
       </div>
@@ -720,7 +791,7 @@
       </div>
     </article>
   
-    <article class="post" data-aos="fade-up" style="   ">
+    <article class="post" data-aos="fade-up" style="flex-direction: row-reverse;   ">
       <div class="post-main">
         <div class="post-info">
           <div class="post-time">
@@ -752,7 +823,7 @@
         </div>
         <div class="post-more">
           <a href="/2021/02/17/hello-world/">
-            <i class="iconfont iconmore" style="  " title="阅读更多"></i>
+            <i class="iconfont iconmore" style="float: right;  " title="阅读更多"></i>
           </a>
         </div>
       </div>

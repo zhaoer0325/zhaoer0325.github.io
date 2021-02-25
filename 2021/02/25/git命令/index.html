@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>Hello World | Z H A O E R</title>
+  <title>Git基本命令 | Z H A O E R</title>
 
   
     
@@ -534,7 +534,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/7.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img11.360buyimg.com/ddimg/jfs/t1/151742/33/19925/217368/60374bc2E1c483881/2d0f0dd2ec66fbf7.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -545,7 +545,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['Hello World'],
+              strings: ['Git基本命令'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -570,27 +570,81 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-02-17</span>
+        <span class="post-time">2021-02-25</span>
       </div>
       
       <div class="post-tags-categories">
         
+        <div class="tags">
+          <i class="iconfont icontag"></i>
+          
+            <a href="/tags/Git/" class="">
+              Git
+            </a>
+          
+        </div>
+        
         
       </div>
       <div class="post-content">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Hello-ZHAO"><a href="#Hello-ZHAO" class="headerlink" title="Hello ZHAO"></a>Hello ZHAO</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+        <img src="https://img13.360buyimg.com/ddimg/jfs/t1/157798/5/8155/123566/60374588E8db1e7ba/d5a383723d984ab9.png">
+
+<h5 id="【1】创建–创建本地库"><a href="#【1】创建–创建本地库" class="headerlink" title="【1】创建–创建本地库"></a>【1】创建–创建本地库</h5><p>1.在某一个磁盘找到合适的位置，打开终端</p>
+<pre><code class="bash">$ mkdir &lt;本地库名&gt;
+$ cd &lt;本地库名&gt;
+$ git init
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+<p>2.在库里创建一个文件并提交到本地仓库</p>
+<pre><code class="bash">//提交文件到暂存区
+$ git add &lt;文件名&gt;
+
+//提交文件到本地库
+$ git commit -m &quot;文件描述&quot; &lt;文件名&gt;
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+<h5 id="2】push操作–将本地仓库的内容推送到远程仓库（GitHub）"><a href="#2】push操作–将本地仓库的内容推送到远程仓库（GitHub）" class="headerlink" title="2】push操作–将本地仓库的内容推送到远程仓库（GitHub）"></a>2】push操作–将本地仓库的内容推送到远程仓库（GitHub）</h5><p>1.在github上把远程库创建好</p>
+<p>  （1）获得远程库的地址：<a target="_blank" rel="noopener" href="https://github.com/zhaoer0325/gitresp2.git">https://github.com/zhaoer0325/gitresp2.git</a><br>  （2）在本地把远程库的地址用别名保存</p>
+<pre><code>//查看别名
+$ git remote -v
+//起一个别名
+$ git remote add &lt;别名&gt; &lt;远程库地址&gt;
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+<p> 2.将本地库的内容推送到远程库</p>
+<pre><code>$ git push &lt;远程库名&gt; &lt;分支名&gt;
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h5 id="【3】clone操作-将远程库拉取到本地"><a href="#【3】clone操作-将远程库拉取到本地" class="headerlink" title="【3】clone操作-将远程库拉取到本地"></a>【3】clone操作-将远程库拉取到本地</h5><pre><code>$ git clone &lt;远程库地址&gt;
+</code></pre>
+<p>注：克隆操作可以帮我们完成<br>（1）初始化本地库<br>（2）将远程库内容完整的克隆到本地<br>（3）替我们创建远程库的别名</p>
+<h5 id="【4】push操作-加入团队并推送到远程库"><a href="#【4】push操作-加入团队并推送到远程库" class="headerlink" title="【4】push操作-加入团队并推送到远程库"></a>【4】push操作-加入团队并推送到远程库</h5><p>接受邀请</p>
+<h5 id="【5】远程库修改后拉取更新本地库（拉取pull操作-fetch操作-merge操作）"><a href="#【5】远程库修改后拉取更新本地库（拉取pull操作-fetch操作-merge操作）" class="headerlink" title="【5】远程库修改后拉取更新本地库（拉取pull操作=fetch操作+merge操作）"></a>【5】远程库修改后拉取更新本地库（拉取pull操作=fetch操作+merge操作）</h5><p>保险和慎重的方法：</p>
+<pre><code>//抓取fetch操作-将远程库的内容下载到本地，但工作区的文件并没有更新
+$ git fetch &lt;远程库名&gt; &lt;分支名&gt;
+//合并merge操作- 合并前注意要切换到相同的分支
+$ git merge &lt;远程库名&gt;/&lt;分支名&gt;
+</code></pre>
+<p>简单的方法</p>
+<pre><code class="bash">//拉取pull操作=fetch操作+merge操作
+$ git pull &lt;远程库名&gt; &lt;分支名&gt;
+</code></pre>
+<h5 id="【6】分支"><a href="#【6】分支" class="headerlink" title="【6】分支"></a>【6】分支</h5><pre><code>//查看所有分支：
+$ git branch -v
+
+//创建新的分支
+$ git branch &lt;分支名&gt;
+
+//切换分支
+$ git checkout &lt;分支名&gt;
+
+//将&lt;分支1&gt;合并到&lt;分支2&gt;，先切换到&lt;分支2&gt;
+$ git merge &lt;分支1&gt;
+</code></pre>
+<h5 id="【7】SSH免密登录"><a href="#【7】SSH免密登录" class="headerlink" title="【7】SSH免密登录"></a>【7】SSH免密登录</h5><pre><code>//进入用户的主目录
+$ cd ~
+
+//执行命令生产一个.SSH的目录，其中C是大写
+$ ssh-keygen -t rsa -C &lt;github账号的邮箱&gt;
+（点三次回车）
+</code></pre>
+<p>在.ssh目录下有两个文件，打开id_rad.pub，将里面的内容进行复制操作，复制到GitHub的秘钥里即可</p>
 
       </div>
       
@@ -602,24 +656,23 @@
 
 
 
+
+
   
-  <div class="post-nav-prev post-nav-item">
+  <div class="post-nav-next post-nav-item">
     <div class="post-nav-img lazyload" data-original="/medias/bb.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
     <a href="/2021/02/21/my-first-post/" class="post-nav-link">
       <div class="title">
-        <i class="fa fa-angle-left"></i> 上一篇:
+        下一篇: <i class="fa fa-angle-right"></i>
         <div>《我喜欢的你是寂静的》</div>
       </div>
-      
       <!-- <div class="content">
         我喜欢你是寂静的—-聂鲁达我喜欢你是寂静的，仿佛你消失了一样。你从远处聆听我，我的声音却无法触及你。好像你的双眼已经飞离
       </div> -->
     </a>
   </div>
-
-
 
 </div>
 
