@@ -534,7 +534,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img11.360buyimg.com/ddimg/jfs/t1/151742/33/19925/217368/60374bc2E1c483881/2d0f0dd2ec66fbf7.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img12.360buyimg.com/ddimg/jfs/t1/154354/29/19867/380501/6037a639E7b81d2c0/d98db6a6ac7b1699.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -589,61 +589,43 @@
       <div class="post-content">
         <img src="https://img13.360buyimg.com/ddimg/jfs/t1/157798/5/8155/123566/60374588E8db1e7ba/d5a383723d984ab9.png">
 
-<h5 id="【1】创建–创建本地库"><a href="#【1】创建–创建本地库" class="headerlink" title="【1】创建–创建本地库"></a>【1】创建–创建本地库</h5><p>1.在某一个磁盘找到合适的位置，打开终端</p>
-<pre><code class="bash">$ mkdir &lt;本地库名&gt;
-$ cd &lt;本地库名&gt;
-$ git init
-</code></pre>
+<h4 id="创建–创建本地库"><a href="#创建–创建本地库" class="headerlink" title="创建–创建本地库"></a>创建–创建本地库</h4><p>1.在某一个磁盘找到合适的位置，打开终端</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir &lt;本地库名&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;本地库名&gt;</span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure>
 <p>2.在库里创建一个文件并提交到本地仓库</p>
-<pre><code class="bash">//提交文件到暂存区
-$ git add &lt;文件名&gt;
-
-//提交文件到本地库
-$ git commit -m &quot;文件描述&quot; &lt;文件名&gt;
-</code></pre>
-<h5 id="2】push操作–将本地仓库的内容推送到远程仓库（GitHub）"><a href="#2】push操作–将本地仓库的内容推送到远程仓库（GitHub）" class="headerlink" title="2】push操作–将本地仓库的内容推送到远程仓库（GitHub）"></a>2】push操作–将本地仓库的内容推送到远程仓库（GitHub）</h5><p>1.在github上把远程库创建好</p>
+<p>//提交文件到暂存区</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add &lt;文件名&gt;</span><br></pre></td></tr></table></figure>
+<p>//提交文件到本地库</p>
+<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;文件描述&quot;</span> <span class="params">&lt;文件名&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="push操作–将本地仓库的内容推送到远程仓库（GitHub）"><a href="#push操作–将本地仓库的内容推送到远程仓库（GitHub）" class="headerlink" title="push操作–将本地仓库的内容推送到远程仓库（GitHub）"></a>push操作–将本地仓库的内容推送到远程仓库（GitHub）</h4><p>1.在github上把远程库创建好</p>
 <p>  （1）获得远程库的地址：<a target="_blank" rel="noopener" href="https://github.com/zhaoer0325/gitresp2.git">https://github.com/zhaoer0325/gitresp2.git</a><br>  （2）在本地把远程库的地址用别名保存</p>
-<pre><code>//查看别名
-$ git remote -v
-//起一个别名
-$ git remote add &lt;别名&gt; &lt;远程库地址&gt;
-</code></pre>
+<p>//查看别名</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git remote -v</span><br></pre></td></tr></table></figure>
+<p>//起一个别名</p>
+<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add <span class="attribute">&lt;别名&gt;</span> <span class="attribute">&lt;远程库地址&gt;</span></span><br></pre></td></tr></table></figure>
 <p> 2.将本地库的内容推送到远程库</p>
-<pre><code>$ git push &lt;远程库名&gt; &lt;分支名&gt;
-</code></pre>
-<h5 id="【3】clone操作-将远程库拉取到本地"><a href="#【3】clone操作-将远程库拉取到本地" class="headerlink" title="【3】clone操作-将远程库拉取到本地"></a>【3】clone操作-将远程库拉取到本地</h5><pre><code>$ git clone &lt;远程库地址&gt;
-</code></pre>
+<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push <span class="attribute">&lt;远程库名&gt;</span> <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="clone操作-将远程库拉取到本地"><a href="#clone操作-将远程库拉取到本地" class="headerlink" title="clone操作-将远程库拉取到本地"></a>clone操作-将远程库拉取到本地</h4><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">clone</span> <span class="title">&lt;远程库地址&gt;</span></span><br></pre></td></tr></table></figure>
 <p>注：克隆操作可以帮我们完成<br>（1）初始化本地库<br>（2）将远程库内容完整的克隆到本地<br>（3）替我们创建远程库的别名</p>
-<h5 id="【4】push操作-加入团队并推送到远程库"><a href="#【4】push操作-加入团队并推送到远程库" class="headerlink" title="【4】push操作-加入团队并推送到远程库"></a>【4】push操作-加入团队并推送到远程库</h5><p>接受邀请</p>
-<h5 id="【5】远程库修改后拉取更新本地库（拉取pull操作-fetch操作-merge操作）"><a href="#【5】远程库修改后拉取更新本地库（拉取pull操作-fetch操作-merge操作）" class="headerlink" title="【5】远程库修改后拉取更新本地库（拉取pull操作=fetch操作+merge操作）"></a>【5】远程库修改后拉取更新本地库（拉取pull操作=fetch操作+merge操作）</h5><p>保险和慎重的方法：</p>
-<pre><code>//抓取fetch操作-将远程库的内容下载到本地，但工作区的文件并没有更新
-$ git fetch &lt;远程库名&gt; &lt;分支名&gt;
-//合并merge操作- 合并前注意要切换到相同的分支
-$ git merge &lt;远程库名&gt;/&lt;分支名&gt;
-</code></pre>
-<p>简单的方法</p>
-<pre><code class="bash">//拉取pull操作=fetch操作+merge操作
-$ git pull &lt;远程库名&gt; &lt;分支名&gt;
-</code></pre>
-<h5 id="【6】分支"><a href="#【6】分支" class="headerlink" title="【6】分支"></a>【6】分支</h5><pre><code>//查看所有分支：
-$ git branch -v
-
-//创建新的分支
-$ git branch &lt;分支名&gt;
-
-//切换分支
-$ git checkout &lt;分支名&gt;
-
-//将&lt;分支1&gt;合并到&lt;分支2&gt;，先切换到&lt;分支2&gt;
-$ git merge &lt;分支1&gt;
-</code></pre>
-<h5 id="【7】SSH免密登录"><a href="#【7】SSH免密登录" class="headerlink" title="【7】SSH免密登录"></a>【7】SSH免密登录</h5><pre><code>//进入用户的主目录
-$ cd ~
-
-//执行命令生产一个.SSH的目录，其中C是大写
-$ ssh-keygen -t rsa -C &lt;github账号的邮箱&gt;
-（点三次回车）
-</code></pre>
+<h4 id="push操作-加入团队并推送到远程库"><a href="#push操作-加入团队并推送到远程库" class="headerlink" title="push操作-加入团队并推送到远程库"></a>push操作-加入团队并推送到远程库</h4><p>接受邀请</p>
+<h4 id="远程库修改后拉取更新本地库（拉取pull操作-fetch操作-merge操作）"><a href="#远程库修改后拉取更新本地库（拉取pull操作-fetch操作-merge操作）" class="headerlink" title="远程库修改后拉取更新本地库（拉取pull操作=fetch操作+merge操作）"></a>远程库修改后拉取更新本地库（拉取pull操作=fetch操作+merge操作）</h4><p>保险和慎重的方法：<br>//抓取fetch操作-将远程库的内容下载到本地，但工作区的文件并没有更新</p>
+<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch <span class="attribute">&lt;远程库名&gt;</span> <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
+<p>//合并merge操作- 合并前注意要切换到相同的分支</p>
+<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge <span class="attribute">&lt;远程库名&gt;</span>/<span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
+<p>简单的方法:<br>//拉取pull操作=fetch操作+merge操作</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull &lt;远程库名&gt; &lt;分支名&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><p>//查看所有分支：</p>
+<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git branch -v</span><br></pre></td></tr></table></figure>
+<p>//创建新的分支</p>
+<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
+<p>//切换分支</p>
+<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
+<p>//将&lt;分支1&gt;合并到&lt;分支2&gt;，先切换到&lt;分支2&gt;</p>
+<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge <span class="attribute">&lt;分支1&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="SSH免密登录"><a href="#SSH免密登录" class="headerlink" title="SSH免密登录"></a>SSH免密登录</h4><p>//进入用户的主目录</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> <span class="built_in">cd</span> ~</span><br></pre></td></tr></table></figure>
+<p>//执行命令生产一个.SSH的目录，其中C是大写</p>
+<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="attribute">&lt;github账号的邮箱&gt;</span></span><br></pre></td></tr></table></figure>
+<p>（点三次回车）</p>
 <p>在.ssh目录下有两个文件，打开id_rad.pub，将里面的内容进行复制操作，复制到GitHub的秘钥里即可</p>
 
       </div>
