@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>Git基本命令 | Z H A O E R</title>
+  <title>less_01 | Z H A O E R</title>
 
   
     
@@ -534,7 +534,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img12.360buyimg.com/ddimg/jfs/t1/154354/29/19867/380501/6037a639E7b81d2c0/d98db6a6ac7b1699.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/9.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -545,7 +545,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['Git基本命令'],
+              strings: ['less_01'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -570,7 +570,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-02-25</span>
+        <span class="post-time">2021-03-01</span>
       </div>
       
       <div class="post-tags-categories">
@@ -578,8 +578,8 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/Git/" class="">
-              Git
+            <a href="/tags/Less/" class="">
+              Less
             </a>
           
         </div>
@@ -587,46 +587,17 @@
         
       </div>
       <div class="post-content">
-        <img src="https://img13.360buyimg.com/ddimg/jfs/t1/157798/5/8155/123566/60374588E8db1e7ba/d5a383723d984ab9.png">
-
-<h4 id="创建–创建本地库"><a href="#创建–创建本地库" class="headerlink" title="创建–创建本地库"></a>创建–创建本地库</h4><p>1.在某一个磁盘找到合适的位置，打开终端</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir &lt;本地库名&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;本地库名&gt;</span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-<p>2.在库里创建一个文件并提交到本地仓库</p>
-<p>//提交文件到暂存区</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add &lt;文件名&gt;</span><br></pre></td></tr></table></figure>
-<p>//提交文件到本地库</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;文件描述&quot;</span> <span class="params">&lt;文件名&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="push操作–将本地仓库的内容推送到远程仓库（GitHub）"><a href="#push操作–将本地仓库的内容推送到远程仓库（GitHub）" class="headerlink" title="push操作–将本地仓库的内容推送到远程仓库（GitHub）"></a>push操作–将本地仓库的内容推送到远程仓库（GitHub）</h4><p>1.在github上把远程库创建好</p>
-<p>  （1）获得远程库的地址：<a target="_blank" rel="noopener" href="https://github.com/zhaoer0325/gitresp2.git">https://github.com/zhaoer0325/gitresp2.git</a><br>  （2）在本地把远程库的地址用别名保存</p>
-<p>//查看别名</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git remote -v</span><br></pre></td></tr></table></figure>
-<p>//起一个别名</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add <span class="attribute">&lt;别名&gt;</span> <span class="attribute">&lt;远程库地址&gt;</span></span><br></pre></td></tr></table></figure>
-<p> 2.将本地库的内容推送到远程库</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push <span class="attribute">&lt;远程库名&gt;</span> <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="clone操作-将远程库拉取到本地"><a href="#clone操作-将远程库拉取到本地" class="headerlink" title="clone操作-将远程库拉取到本地"></a>clone操作-将远程库拉取到本地</h4><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">clone</span> <span class="title">&lt;远程库地址&gt;</span></span><br></pre></td></tr></table></figure>
-<p>注：克隆操作可以帮我们完成<br>（1）初始化本地库<br>（2）将远程库内容完整的克隆到本地<br>（3）替我们创建远程库的别名</p>
-<h4 id="push操作-加入团队并推送到远程库"><a href="#push操作-加入团队并推送到远程库" class="headerlink" title="push操作-加入团队并推送到远程库"></a>push操作-加入团队并推送到远程库</h4><p>接受邀请</p>
-<h4 id="远程库修改后拉取更新本地库（拉取pull操作-fetch操作-merge操作）"><a href="#远程库修改后拉取更新本地库（拉取pull操作-fetch操作-merge操作）" class="headerlink" title="远程库修改后拉取更新本地库（拉取pull操作=fetch操作+merge操作）"></a>远程库修改后拉取更新本地库（拉取pull操作=fetch操作+merge操作）</h4><p>保险和慎重的方法：<br>//抓取fetch操作-将远程库的内容下载到本地，但工作区的文件并没有更新</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch <span class="attribute">&lt;远程库名&gt;</span> <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
-<p>//合并merge操作- 合并前注意要切换到相同的分支</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge <span class="attribute">&lt;远程库名&gt;</span>/<span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
-<p>简单的方法:<br>//拉取pull操作=fetch操作+merge操作</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull &lt;远程库名&gt; &lt;分支名&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><p>//查看所有分支：</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git branch -v</span><br></pre></td></tr></table></figure>
-<p>//创建新的分支</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
-<p>//切换分支</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
-<p>//将&lt;分支1&gt;合并到&lt;分支2&gt;，先切换到&lt;分支2&gt;</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge <span class="attribute">&lt;分支1&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="SSH免密登录"><a href="#SSH免密登录" class="headerlink" title="SSH免密登录"></a>SSH免密登录</h4><p>//进入用户的主目录</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> <span class="built_in">cd</span> ~</span><br></pre></td></tr></table></figure>
-<p>//执行命令生产一个.SSH的目录，其中C是大写</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="attribute">&lt;github账号的邮箱&gt;</span></span><br></pre></td></tr></table></figure>
-<p>（点三次回车）</p>
-<p>在.ssh目录下有两个文件，打开id_rad.pub，将里面的内容进行复制操作，复制到GitHub的秘钥里即可</p>
+        <h4 id="less教程"><a href="#less教程" class="headerlink" title="less教程"></a>less教程</h4><p><a target="_blank" rel="noopener" href="http://lesscss.cn/">less中文官网</a><br><a target="_blank" rel="noopener" href="https://less.bootcss.com/">bootstrap中的less教程</a></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//head里面写less</span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/less&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line">//body之后</span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;//cdnjs.cloudflare.com/ajax/libs/less.js/3.11.1/less.min.js&quot;</span> &gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="less编译工具"><a href="#less编译工具" class="headerlink" title="less编译工具"></a>less编译工具</h4><p>koala</p>
+<h4 id="less中的注释"><a href="#less中的注释" class="headerlink" title="less中的注释"></a>less中的注释</h4><p>//不会被编译到CSS中<br>/<em>会被编译到CSS中</em>/</p>
+<h4 id="less中的变量"><a href="#less中的变量" class="headerlink" title="less中的变量"></a>less中的变量</h4><p> 使用@来申明一个变量：@color:pink;<br> 1.作为普通属性值直接使用@color<br> 2.作为选择器和属性名：#@{selector的值}的形式<br> 3.作为URL：@{url}<br> 4.变量的延迟加载</p>
+<h4 id="less中的嵌套规则"><a href="#less中的嵌套规则" class="headerlink" title="less中的嵌套规则"></a>less中的嵌套规则</h4><p> 1.基本嵌套规则<br> 2.&amp;的使用 a:hover &amp;:hover去除空格（其中&amp;表示当前选择器的父级a）</p>
+<h4 id="less中的混合"><a href="#less中的混合" class="headerlink" title="less中的混合"></a>less中的混合</h4><p> 混合（Mixins）就是将一系列属性从一个规则集引入另一个规则集</p>
+<h5 id="普通混合"><a href="#普通混合" class="headerlink" title="普通混合"></a>普通混合</h5><p>缺点：会编译到原生css中，不带（）</p>
+<h5 id="不带输出的混合"><a href="#不带输出的混合" class="headerlink" title="不带输出的混合"></a>不带输出的混合</h5><p>不会编译</p>
+<h5 id="带参数并且有默认值的混合"><a href="#带参数并且有默认值的混合" class="headerlink" title="带参数并且有默认值的混合"></a>带参数并且有默认值的混合</h5><h5 id="带参数有默认值的混合"><a href="#带参数有默认值的混合" class="headerlink" title="带参数有默认值的混合"></a>带参数有默认值的混合</h5><p>.co(@w:10px,@h:10px,@c:blue)</p>
+<h5 id="命名参数"><a href="#命名参数" class="headerlink" title="命名参数"></a>命名参数</h5><p>只指定某一项其他带默认值<br>.co(@c:red) </p>
 
       </div>
       
@@ -640,17 +611,20 @@
 
   
   <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="https://img14.360buyimg.com/ddimg/jfs/t1/157979/9/8871/761430/6039bee1Eb8aa497d/06d14ad2c74dfd97.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="https://img12.360buyimg.com/ddimg/jfs/t1/155995/3/11978/417153/603cbe0bE4a6b78a7/8e8c3c1313e6739a.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/02/27/Bootstrap-start/" class="post-nav-link">
+    <a href="/2021/03/01/css-jz/" class="post-nav-link">
       <div class="title">
         <i class="fa fa-angle-left"></i> 上一篇:
-        <div>Bootstrap入门</div>
+        <div>CSS水平垂直居中常见方法总结</div>
       </div>
       
       <!-- <div class="content">
-        Bootstrap是一个HTML/CSS框架，是基于HTML5和CSS3开发的，并在jQuery的基础上进行了更为个性化
+        元素水平居中居中不好使的原因：
+
+元素没有设置宽度，没有宽度怎么居中嘛！
+设置了宽度依然不好使，你设置的是行内元素吧12
       </div> -->
     </a>
   </div>
@@ -659,16 +633,16 @@
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/bb.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/medias/7.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/02/21/my-first-post/" class="post-nav-link">
+    <a href="/2021/02/28/vue-start/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>《我喜欢的你是寂静的》</div>
+        <div>vue_start</div>
       </div>
       <!-- <div class="content">
-        我喜欢你是寂静的—-聂鲁达我喜欢你是寂静的，仿佛你消失了一样。你从远处聆听我，我的声音却无法触及你。好像你的双眼已经飞离
+        
       </div> -->
     </a>
   </div>

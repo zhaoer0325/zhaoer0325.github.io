@@ -10,7 +10,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>Git基本命令 | Z H A O E R</title>
+  <title>Bootstrap入门 | Z H A O E R</title>
 
   
     
@@ -534,7 +534,7 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img12.360buyimg.com/ddimg/jfs/t1/154354/29/19867/380501/6037a639E7b81d2c0/d98db6a6ac7b1699.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="https://img14.360buyimg.com/ddimg/jfs/t1/157979/9/8871/761430/6039bee1Eb8aa497d/06d14ad2c74dfd97.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0"></canvas>
@@ -545,7 +545,7 @@
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
           <script>
             var typed = new Typed("#post-detail-header-title", {
-              strings: ['Git基本命令'],
+              strings: ['Bootstrap入门'],
               startDelay: 100,
               typeSpeed: 100,
               loop: false,
@@ -570,7 +570,7 @@
       
       <div class="post-meta">
         <i class="fa fa-clock-o" aria-hidden="true"></i>
-        <span class="post-time">2021-02-25</span>
+        <span class="post-time">2021-02-27</span>
       </div>
       
       <div class="post-tags-categories">
@@ -578,8 +578,8 @@
         <div class="tags">
           <i class="iconfont icontag"></i>
           
-            <a href="/tags/Git/" class="">
-              Git
+            <a href="/tags/Bootstrap/" class="">
+              Bootstrap
             </a>
           
         </div>
@@ -587,47 +587,137 @@
         
       </div>
       <div class="post-content">
-        <img src="https://img13.360buyimg.com/ddimg/jfs/t1/157798/5/8155/123566/60374588E8db1e7ba/d5a383723d984ab9.png">
+        <p>Bootstrap是一个HTML/CSS框架，是基于HTML5和CSS3开发的，并在jQuery的基础上进行了更为个性化的完善，兼容大部分jQuery插件</p>
+<p>前期准备<br>1.在head里引用css</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link <span class="attribute">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attribute">href</span>=<span class="string">&quot;css/bootstrap.min.css&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>2.body之后引用js，先jq再boot</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;js/jquery-1.12.4.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;js/bootstrap.min.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h4 id="布局容器"><a href="#布局容器" class="headerlink" title="布局容器"></a>布局容器</h4><p>BS的网页中需定义一个容器</p>
+<h5 id="1-流体容器"><a href="#1-流体容器" class="headerlink" title="1.流体容器"></a>1.流体容器</h5><p><strong>.container-fluid</strong>:用于100%宽度，占据全部viewport的容器（width=”auto”）</p>
+<h5 id="2-固定容器（常用）"><a href="#2-固定容器（常用）" class="headerlink" title="2.固定容器（常用）"></a>2.固定容器（常用）</h5><p><strong>.container</strong>:用于固定容器宽度，并支持响应式布局。</p>
+<table>
+<thead>
+<tr>
+<th align="center">阈值</th>
+<th align="center">.container最大width</th>
+<th align="center">最大列宽</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">&gt;=1200 (lg)</td>
+<td align="center">1170（1140+槽宽）</td>
+<td align="center">~97</td>
+</tr>
+<tr>
+<td align="center">[992-1200)（md）</td>
+<td align="center">970（940+槽宽）</td>
+<td align="center">~81</td>
+</tr>
+<tr>
+<td align="center">[768,992)（sm）</td>
+<td align="center">750（720+槽宽）</td>
+<td align="center">~62</td>
+</tr>
+<tr>
+<td align="center">&lt;768xs (xs）</td>
+<td align="center">auto</td>
+<td align="center">auto</td>
+</tr>
+</tbody></table>
+<ul>
+<li>顺序是从小到大读取，<strong>移动优先</strong></li>
+<li>槽宽：grid-gutter-with</li>
+<li>这两种容器类不能互相嵌套。</li>
+</ul>
+<p>在栅格系统中，我们在 Less 文件中使用以下媒体查询（media query）来创建关键的分界点阈值。</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 超小屏幕（手机，小于 768px） */</span></span><br><span class="line"><span class="comment">/* 没有任何媒体查询相关的代码，因为这在 Bootstrap 中是默认的（还记得 Bootstrap 是移动设备优先的吗？） */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/* 小屏幕（平板，大于等于 768px） */</span></span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">min-width</span>: <span class="variable">@screen-sm-min</span>) &#123; ... &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 中等屏幕（桌面显示器，大于等于 992px） */</span></span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">min-width</span>: <span class="variable">@screen-md-min</span>) &#123; ... &#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 大屏幕（大桌面显示器，大于等于 1200px） */</span></span><br><span class="line"><span class="keyword">@media</span> (<span class="attribute">min-width</span>: <span class="variable">@screen-lg-min</span>) &#123; ... &#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h4 id="栅格系统"><a href="#栅格系统" class="headerlink" title="栅格系统"></a>栅格系统</h4><p>BS内置了一套响应式的、移动设备优先的栅格系统，随设备屏幕尺寸的变换，页面可以分为若干列（最多12列，具体列数由屏幕尺寸决定）</p>
+<h5 id="设计原则"><a href="#设计原则" class="headerlink" title="设计原则"></a>设计原则</h5><ul>
+<li>栅格系统通过一系列行和列组成</li>
+<li>行必须包含在流体容器或固定容器之中。</li>
+<li>网页的内容都包含在列中，行能直接包含的只有列。<br>定义列中的class<table>
+<thead>
+<tr>
+<th align="center">class</th>
+<th align="center">适用设备</th>
+<th align="center">.container最大宽度</th>
+<th align="center">最大列宽</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">.col-xs-n</td>
+<td align="center">手机</td>
+<td align="center">auto</td>
+<td align="center">auto</td>
+</tr>
+<tr>
+<td align="center">.col-sm-n</td>
+<td align="center">平板</td>
+<td align="center">750px</td>
+<td align="center">62px</td>
+</tr>
+<tr>
+<td align="center">.col-md-n</td>
+<td align="center">PC</td>
+<td align="center">970px</td>
+<td align="center">81px</td>
+</tr>
+<tr>
+<td align="center">.col-lg-n</td>
+<td align="center">大PC</td>
+<td align="center">1170px</td>
+<td align="center">97px</td>
+</tr>
+</tbody></table>
+</li>
+<li>n是一个数字，表示该元素占的列数，如果一行的列数超过12，多余的列将被整体另起一行。</li>
+<li>一个元素中可以定义多个class，适用不同屏幕</li>
+<li>注意阈值上样式的设置不能跳跃<br>class=”col-lg-4 col-sm-4 col-xs-6”   //class里用空格隔开</li>
+</ul>
+<hr>
+<h4 id="栅格源码分析"><a href="#栅格源码分析" class="headerlink" title="栅格源码分析"></a>栅格源码分析</h4><h5 id="1-流体容器-amp-固定容器的公共样式"><a href="#1-流体容器-amp-固定容器的公共样式" class="headerlink" title="1.流体容器&amp;固定容器的公共样式"></a>1.流体容器&amp;固定容器的公共样式</h5><p>margin-right：auto<br>margin-left：auto<br>padding-right：15px<br>padding-left：15px</p>
+<h5 id="2-固定容器有自己的特定样式"><a href="#2-固定容器有自己的特定样式" class="headerlink" title="2.固定容器有自己的特定样式"></a>2.固定容器有自己的特定样式</h5><p>顺序不可变</p>
+<h5 id="3-行-make-grid-row"><a href="#3-行-make-grid-row" class="headerlink" title="3.行 make-grid-row"></a>3.行 make-grid-row</h5><p>margin-right：-15px<br>margin-left：-15px</p>
+<h5 id="4-列-make-grid-columns"><a href="#4-列-make-grid-columns" class="headerlink" title="4.列 make-grid-columns"></a>4.列 make-grid-columns</h5><p>1.公共样式:<br>      两侧有15px 的padding<br>      相对定位<br>float<br>width范围： 1-12</p>
+<p>2.列排序：</p>
+<ul>
+<li>.col-md-push-* ：往前推</li>
+<li>.col-md-pull-* ：往后拉<br>n: 0-12 (0：auto)</li>
+</ul>
+<p>3.列偏移：<br>margin-left：0-12<br>列向右偏移 col-lg-offset-n（这些类实际是通过使用 * 选择器为当前元素增加了左侧的边距（margin））</p>
+<hr>
+<h4 id="布局组件"><a href="#布局组件" class="headerlink" title="布局组件"></a>布局组件</h4><h5 id="1-图标"><a href="#1-图标" class="headerlink" title="1.图标"></a>1.图标</h5><p><strong>下载</strong><br>CND：</p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link <span class="attribute">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attribute">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+<p><strong>用法</strong><br>Bootstrap图标库的图标都是 SVG 格式的,Bootstrap 图标库 默认将 width 和 height 设置为 1em，便于你通过 font-size 属性重置图标的大小。<a target="_blank" rel="noopener" href="https://icons.bootcss.com/#icons">查看图标库</a></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;bi bi-图标名称&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="创建–创建本地库"><a href="#创建–创建本地库" class="headerlink" title="创建–创建本地库"></a>创建–创建本地库</h4><p>1.在某一个磁盘找到合适的位置，打开终端</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir &lt;本地库名&gt;</span><br><span class="line">$ <span class="built_in">cd</span> &lt;本地库名&gt;</span><br><span class="line">$ git init</span><br></pre></td></tr></table></figure>
-<p>2.在库里创建一个文件并提交到本地仓库</p>
-<p>//提交文件到暂存区</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add &lt;文件名&gt;</span><br></pre></td></tr></table></figure>
-<p>//提交文件到本地库</p>
-<figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m <span class="string">&quot;文件描述&quot;</span> <span class="params">&lt;文件名&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="push操作–将本地仓库的内容推送到远程仓库（GitHub）"><a href="#push操作–将本地仓库的内容推送到远程仓库（GitHub）" class="headerlink" title="push操作–将本地仓库的内容推送到远程仓库（GitHub）"></a>push操作–将本地仓库的内容推送到远程仓库（GitHub）</h4><p>1.在github上把远程库创建好</p>
-<p>  （1）获得远程库的地址：<a target="_blank" rel="noopener" href="https://github.com/zhaoer0325/gitresp2.git">https://github.com/zhaoer0325/gitresp2.git</a><br>  （2）在本地把远程库的地址用别名保存</p>
-<p>//查看别名</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git remote -v</span><br></pre></td></tr></table></figure>
-<p>//起一个别名</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git remote add <span class="attribute">&lt;别名&gt;</span> <span class="attribute">&lt;远程库地址&gt;</span></span><br></pre></td></tr></table></figure>
-<p> 2.将本地库的内容推送到远程库</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git push <span class="attribute">&lt;远程库名&gt;</span> <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="clone操作-将远程库拉取到本地"><a href="#clone操作-将远程库拉取到本地" class="headerlink" title="clone操作-将远程库拉取到本地"></a>clone操作-将远程库拉取到本地</h4><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="keyword">clone</span> <span class="title">&lt;远程库地址&gt;</span></span><br></pre></td></tr></table></figure>
-<p>注：克隆操作可以帮我们完成<br>（1）初始化本地库<br>（2）将远程库内容完整的克隆到本地<br>（3）替我们创建远程库的别名</p>
-<h4 id="push操作-加入团队并推送到远程库"><a href="#push操作-加入团队并推送到远程库" class="headerlink" title="push操作-加入团队并推送到远程库"></a>push操作-加入团队并推送到远程库</h4><p>接受邀请</p>
-<h4 id="远程库修改后拉取更新本地库（拉取pull操作-fetch操作-merge操作）"><a href="#远程库修改后拉取更新本地库（拉取pull操作-fetch操作-merge操作）" class="headerlink" title="远程库修改后拉取更新本地库（拉取pull操作=fetch操作+merge操作）"></a>远程库修改后拉取更新本地库（拉取pull操作=fetch操作+merge操作）</h4><p>保险和慎重的方法：<br>//抓取fetch操作-将远程库的内容下载到本地，但工作区的文件并没有更新</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git fetch <span class="attribute">&lt;远程库名&gt;</span> <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
-<p>//合并merge操作- 合并前注意要切换到相同的分支</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge <span class="attribute">&lt;远程库名&gt;</span>/<span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
-<p>简单的方法:<br>//拉取pull操作=fetch操作+merge操作</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull &lt;远程库名&gt; &lt;分支名&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h4><p>//查看所有分支：</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>git branch -v</span><br></pre></td></tr></table></figure>
-<p>//创建新的分支</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git branch <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
-<p>//切换分支</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git checkout <span class="attribute">&lt;分支名&gt;</span></span><br></pre></td></tr></table></figure>
-<p>//将&lt;分支1&gt;合并到&lt;分支2&gt;，先切换到&lt;分支2&gt;</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git merge <span class="attribute">&lt;分支1&gt;</span></span><br></pre></td></tr></table></figure>
-<h4 id="SSH免密登录"><a href="#SSH免密登录" class="headerlink" title="SSH免密登录"></a>SSH免密登录</h4><p>//进入用户的主目录</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$</span> <span class="built_in">cd</span> ~</span><br></pre></td></tr></table></figure>
-<p>//执行命令生产一个.SSH的目录，其中C是大写</p>
-<figure class="highlight bnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="attribute">&lt;github账号的邮箱&gt;</span></span><br></pre></td></tr></table></figure>
-<p>（点三次回车）</p>
-<p>在.ssh目录下有两个文件，打开id_rad.pub，将里面的内容进行复制操作，复制到GitHub的秘钥里即可</p>
-
+<h5 id="2-导航条"><a href="#2-导航条" class="headerlink" title="2.导航条"></a>2.导航条</h5><p>在nav元素中使用.navrbar、navbar-default 和 role=”navigation”可以定义一个默认的导航条</p>
+<h5 id="3-下拉菜单"><a href="#3-下拉菜单" class="headerlink" title="3.下拉菜单"></a>3.下拉菜单</h5><h5 id="4-按钮组"><a href="#4-按钮组" class="headerlink" title="4.按钮组"></a>4.按钮组</h5><h5 id="5-分页"><a href="#5-分页" class="headerlink" title="5.分页"></a>5.分页</h5><h4 id="栅格盒模型"><a href="#栅格盒模型" class="headerlink" title="栅格盒模型"></a>栅格盒模型</h4><ul>
+<li>容器两边具有15px的padding(为了容器能包裹住行溢出的padding)</li>
+<li>行两边具有-15px的margin（为了在列里面嵌套行的时候把槽宽抵消掉）</li>
+<li>列两边具有15px的padding（槽宽）即相邻列的槽宽之和是30px</li>
+</ul>
+<p>*补充<br>当既有父元素，也有兄弟元素时，该元素会先看看四个方向有没有兄弟元素存在。如果该方向有兄弟元素，则这个方向的margin就是相对于兄弟元素而言。如果该方向没有兄弟元素，则这个方向的margin就是相对于父元素而言。</p>
+<p>padding和margin的区别在于：padding体现的是元素的“内部结构”，而margin体现的是元素之间的相互关系。</p>
+<p>引入bootstrap框架时，页面是采用的IE盒模型的方式呈现的，也就是给所有盒子加了box-sizing:border-box;(width表示content+padding+border)</p>
+<h5 id="排版"><a href="#排版" class="headerlink" title="排版"></a>排版</h5><p>Bootstrap 排版、链接样式设置了基本的全局样式。分别是：</p>
+<ul>
+<li>为 body 元素设置 background-color: #fff;</li>
+<li>使用 @font-family-base、@font-size-base 和 @line-height-base 变量作为排版的基本参数</li>
+<li>为所有链接设置了基本颜色 @link-color ，并且当链接处于 :hover 状态时才添加下划线</li>
+</ul>
+<p>*这些样式都能在 scaffolding.less 文件中找到对应的源码。</p>
+<p><strong>页面主体</strong></p>
+<p>Bootstrap 将全局 font-size 设置为 14px，line-height 设置为 1.428。这些属性直接赋予 <body> 元素和所有段落元素。另外，<p> （段落）元素还被设置了等于 1/2 行高（即 10px）的底部外边距（margin）。</p>
+<h5 id="Less-mixin-和变量"><a href="#Less-mixin-和变量" class="headerlink" title="Less mixin 和变量"></a>Less mixin 和变量</h5><p>除了用于快速布局的预定义栅格类，Bootstrap 还包含了一组 Less 变量和 mixin 用于帮你生成简单、语义化的布局。<br><strong>变量</strong><br>通过变量来定义列数、槽（gutter）宽、媒体查询阈值（用于确定合适让列浮动）。我们使用这些变量生成预定义的栅格类，如上所示，还有如下所示的定制 mixin。</p>
+<ul>
+<li>@grid-columns:              12;</li>
+<li>@grid-gutter-width:         30px;（槽宽是两个15px的padding之和）</li>
+<li>@grid-float-breakpoint:     768px;</li>
+</ul>
+<p><strong>mixin</strong><br>mixin 用来和栅格变量一同使用，为每个列（column）生成语义化的 CSS 代码。</p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Creates a wrapper for a series of columns</span></span><br><span class="line"><span class="selector-class">.make-row</span>(<span class="variable">@gutter</span>: <span class="variable">@grid-gutter-width</span>) &#123;</span><br><span class="line">  </span><br><span class="line">  <span class="selector-class">.clearfix</span>();<span class="comment">// Then clear the floated columns清除浮动列</span></span><br><span class="line">  </span><br><span class="line">    <span class="keyword">@media</span> (<span class="attribute">min-width</span>: <span class="variable">@screen-sm-min</span>) &#123;</span><br><span class="line">    <span class="attribute">margin-left</span>:  (<span class="variable">@gutter</span> / -<span class="number">2</span>);</span><br><span class="line">    <span class="attribute">margin-right</span>: (<span class="variable">@gutter</span> / -<span class="number">2</span>);</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
       </div>
       
     </article>
@@ -640,17 +730,17 @@
 
   
   <div class="post-nav-prev post-nav-item">
-    <div class="post-nav-img lazyload" data-original="https://img14.360buyimg.com/ddimg/jfs/t1/157979/9/8871/761430/6039bee1Eb8aa497d/06d14ad2c74dfd97.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="/medias/7.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/02/27/Bootstrap-start/" class="post-nav-link">
+    <a href="/2021/02/28/vue-start/" class="post-nav-link">
       <div class="title">
         <i class="fa fa-angle-left"></i> 上一篇:
-        <div>Bootstrap入门</div>
+        <div>vue_start</div>
       </div>
       
       <!-- <div class="content">
-        Bootstrap是一个HTML/CSS框架，是基于HTML5和CSS3开发的，并在jQuery的基础上进行了更为个性化
+        
       </div> -->
     </a>
   </div>
@@ -659,16 +749,19 @@
 
   
   <div class="post-nav-next post-nav-item">
-    <div class="post-nav-img lazyload" data-original="/medias/bb.jpg" style="background-size: cover; 
+    <div class="post-nav-img lazyload" data-original="https://img12.360buyimg.com/ddimg/jfs/t1/154354/29/19867/380501/6037a639E7b81d2c0/d98db6a6ac7b1699.jpg" style="background-size: cover; 
       background-position: center center;">
     </div>
-    <a href="/2021/02/21/my-first-post/" class="post-nav-link">
+    <a href="/2021/02/25/git%E5%91%BD%E4%BB%A4/" class="post-nav-link">
       <div class="title">
         下一篇: <i class="fa fa-angle-right"></i>
-        <div>《我喜欢的你是寂静的》</div>
+        <div>Git基本命令</div>
       </div>
       <!-- <div class="content">
-        我喜欢你是寂静的—-聂鲁达我喜欢你是寂静的，仿佛你消失了一样。你从远处聆听我，我的声音却无法触及你。好像你的双眼已经飞离
+        
+
+创建–创建本地库1.在某一个磁盘找到合适的位置，打开终端
+123$ mkdir &lt;本地库名&gt;$ cd &
       </div> -->
     </a>
   </div>
